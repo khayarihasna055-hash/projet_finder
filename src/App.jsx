@@ -168,28 +168,9 @@ function StatBox({ icon, value, label }) {
     </div>
   );
 }
-const containerStyle = { 
-  width: "100%", 
-  display: "flex", 
-  flexDirection: "column", 
-  alignItems: "center", 
-  justifyContent: "flex-start", 
-  padding: "0 20px 40px 20px",  
-  minHeight: "100vh" 
-};
-const headerStyle = { 
-  display: "flex", 
-  alignItems: "center", 
-  gap: "20px", 
-  marginBottom: "40px",
-  position: "sticky",    
-  top: "0",              
-  zIndex: "1000",       
-  background: "#071226", 
-  width: "100%", 
-  justifyContent: "center",
-  padding: "20px 0"       
-};
+
+const containerStyle = { width: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "40px 20px" };
+const headerStyle = { display: "flex", alignItems: "center", gap: "20px", marginBottom: "40px" };
 const iconBoxStyle = { padding: "15px", background: "linear-gradient(45deg,#00ffff,#2563eb)", borderRadius: "20px", boxShadow: "0 0 20px rgba(0,255,255,0.4)" };
 const titleStyle = { fontSize: "3rem", fontWeight: "900", margin: 0, color: 'white' };
 const searchBoxStyle = { width: "100%", maxWidth: "600px", background: "rgba(12, 27, 46, 0.8)", backdropFilter: 'blur(10px)', padding: "40px", borderRadius: "35px", border: "1px solid rgba(0,255,255,0.1)", boxShadow: "0 25px 50px rgba(0,0,0,0.3)", marginBottom: '30px' };
