@@ -11,7 +11,7 @@ export default function App() {
   const [emptyMsg, setEmptyMsg] = useState(false);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
 
-  // Logic for Logo following mouse (Original)
+
   useEffect(() => {
     const handleMouseMove = (e) => {
       setMousePos({ x: (e.clientX - window.innerWidth / 2) / 20, y: (e.clientY - window.innerHeight / 2) / 20 });
@@ -121,7 +121,7 @@ export default function App() {
             <motion.div 
               initial={{ y: 50, opacity: 0 }} 
               animate={{ y: 0, opacity: 1 }} 
-              /* 3D khfifa b sori dyal header */
+              
               whileHover={{ rotateX: mousePos.y * 1.5, rotateY: -mousePos.x * 1.5 }}
               transition={{ type: "spring", stiffness: 100, damping: 20 }}
               style={resultCardStyle}
@@ -180,7 +180,7 @@ const labelStyle = { fontSize: "11px", color: "#8b949e", fontWeight: 'bold', let
 const inputStyle = { background: "rgba(0,0,0,0.3)", border: "1px solid rgba(0,255,255,0.2)", padding: "15px", borderRadius: "15px", color: "white", outline: "none", transition: '0.3s' };
 const btnStyle = { width: "100%", background: "linear-gradient(90deg,#00ffff,#2563eb)", border: "none", padding: "18px", borderRadius: "15px", fontWeight: "900", cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", gap: "12px", color: '#071226', textTransform: 'uppercase', letterSpacing: '1px' };
 
-/* Rje3te lek resultCardStyle kif kan f lwel ghir zt fih transformStyle */
+
 const resultCardStyle = { background: "#0c1b2e", padding: "45px", borderRadius: "40px", border: "1px solid rgba(0,255,255,0.1)", width: "100%", boxShadow: "0 30px 60px rgba(0,0,0,0.4)", transformStyle: "preserve-3d" };
 
 const resultHeader = { display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "40px", flexWrap: "wrap", gap: "25px" };
